@@ -1,0 +1,43 @@
+.App {
+  background: #000;
+  width: 100%;
+  /* text-align: center; */
+  z-index: 1;
+  position: relative;
+}
+.bg {
+  color: #FB78B0;
+  opacity: 0.12;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+}
+.blackpink {
+  font-size: 8vw;
+  font-weight: 700;
+  border: 0.8vw solid #FB78B0;
+  padding: 0 10px 0 10px;
+}
+.in-your-area {
+  margin-top: 0.8vw;
+  color: #000;
+  font-size: 2.5vw;
+  font-weight: 700;
+  background: #FB78B0;
+  padding: 0 10px 0 10px;
+}
+
+.flip {
+  display: inline-block;
+  margin: 0px;
+  transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+
+}

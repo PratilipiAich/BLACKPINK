@@ -1,0 +1,37 @@
+.jisoo-root {
+/* text-align: center; */
+margin: 20px 10vw 500px 10vw;
+}
+.jisoo-top {
+    margin: 0 0 25vw 0;
+}
+.jisoo-text {
+
+    color: #fff;
+    font-size: 16px;
+    width: 55%;
+    text-align: justify;
+  text-justify: inter-word;
+}
+.jisoo-headshot {
+
+    width: auto;
+    height: 35vw;
+    border-radius: 10px;
+}
+.jisoo-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 2vw;
+}
+.centered {
+    /* margin-top: 50px; */
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Train One', cursive;
+    padding: 0;
+    display: inline;
+  }
