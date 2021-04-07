@@ -1,0 +1,11 @@
+.mem-gallery-root {
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+}
+
+.member-gallery-img {
+    height: 30vw;
+    width: auto;
+    margin: 2%;
+    border-radius: 5px;
+}

@@ -11,7 +11,8 @@ import Lisa from './components/Lisa';
 import TVPages from './components/TVPages';
 import HomeDesktop from './components/HomeDesktop';
 import Albums from './components/Albums';
-import Gallery from './components/Gallery';
+import BPGallery from './components/BPGallery';
+import MemberGallery from './components/MemberGallery';
 
 function Routes() {
     return (
@@ -25,7 +26,11 @@ function Routes() {
                         <Route path="/rose" component={Rose} />
                         <Route path="/lisa" component={Lisa} />
                         <Route path="/albums" component={Albums} />
-                        <Route path="/gallery" component={Gallery} />
+                        <Route path="/gallery" component={BPGallery} />
+                        <Route path="/gallery-jisoo" component={MemberGallery} />
+                        <Route path="/gallery-jennie" component={MemberGallery} />
+                        <Route path="/gallery-rose" component={MemberGallery} />
+                        <Route path="/gallery-lisa" component={MemberGallery} />
                         <Route path="/:tvpage" component={TVPages} />
                         
                     </Switch>

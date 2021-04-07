@@ -61,7 +61,7 @@
 .mob-cta:before {
   content: "";
   position: absolute;
-  top: 4vw;
+  top: 2vw;
   left: 20px;
   display: block;
   border-radius: 28px;
