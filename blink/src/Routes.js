@@ -13,6 +13,7 @@ import HomeDesktop from './components/HomeDesktop';
 import Albums from './components/Albums';
 import BPGallery from './components/BPGallery';
 import MemberGallery from './components/MemberGallery';
+import ReactGallery from './components/ReactGallery';
 
 function Routes() {
     return (
@@ -30,7 +31,8 @@ function Routes() {
                         <Route path="/gallery-jisoo" component={MemberGallery} />
                         <Route path="/gallery-jennie" component={MemberGallery} />
                         <Route path="/gallery-rose" component={MemberGallery} />
-                        <Route path="/gallery-lisa" component={MemberGallery} />
+                        <Route path="/gallery-lisa" component={ReactGallery} />
+                        <Route path="/gallery-react" component={ReactGallery} />
                         <Route path="/:tvpage" component={TVPages} />
                         
                     </Switch>

@@ -1,10 +1,63 @@
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import jennie1 from "../assets/jennie/jennie1.gif";
+import jennie2 from "../assets/jennie/jennie2.gif";
 import img10 from "../assets/jennie/10.png";
 import "../styles/Jennie.css";
+import { Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+
+const useStyles = makeStyles({
+  cardRoot: {
+    width: "30vw",
+    // marginRight: "50px",
+    // marginLeft: "50px",
+    background: "transparent",
+    textAlign: "center",
+  },
+  media: {
+    borderRadius: "10px",
+    height: "20vw",
+    width: "auto",
+    marginLeft: "5%",
+    marginRight: "5%",
+    objectFit: "cover",
+    filter: "grayscale(100%)",
+    webkitFilter: "grayscale(100%)",
+    "&:hover": {
+      filter: "none",
+      webkitFilter: "grayscale(0)",
+      border: "3px solid #FB78B0",
+    },
+  },
+  textHead: {
+    fontWeight: 700,
+    fontSize: "14px",
+    lineHeight: 1.5,
+    color: "#FB78B0",
+    fontStyle: "italic"
+  },
+  content: {
+    cursor: "default",
+  },
+  ['@media (max-width:780px)']: { 
+    cardRoot: {
+      width: "250px",
+    },
+    media: {
+      height: "150px",}
+  }
+});
 
 function Jennie() {
+  const classes = useStyles();
   return (
     <div style={{ textAlign: "center" }}>
       <div className="jennie-root">
@@ -101,10 +154,63 @@ function Jennie() {
           “I honestly wish all four of us could shine together as a group.”
         </div>
         <div>
-          <a href="https://www.youtube.com/watch?v=b73BI9eUkjM" target="_blank" >
-            <Image  className="jennie-solo" src={jennie1}/></a>
+          <Grid container spacing={0} direction="column" alignItems="center">
+            <Row className="row">
+              <Col>
+                <Card className={classes.cardRoot}>
+                  <CardActionArea>
+                    <a
+                      href="https://www.youtube.com/watch?v=b73BI9eUkjM"
+                      target="_blank"
+                    >
+                      <CardMedia
+                        className={classes.media}
+                        image={jennie1}
+                        title="Solo"
+                      />
+                    </a>
+                    <CardContent className={classes.content}>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="h2"
+                        className={classes.textHead}
+                      >
+                        Solo
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Col>
+              <Col>
+                <Card className={classes.cardRoot}>
+                  <CardActionArea>
+                    <a
+                      href="https://www.youtube.com/channel/UCNYi_zGmR519r5gYdOKLTjQ"
+                      target="_blank"
+                    >
+                      <CardMedia
+                        className={classes.media}
+                        image={jennie2}
+                        title="Jennierubyjane Official"
+                      />
+                    </a>
+                    <CardContent className={classes.content}>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="h2"
+                        className={classes.textHead}
+                      >
+                        Jennierubyjane Official
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Col>
+            </Row>
+          </Grid>
         </div>
-        <p className="jennie-tag">Solo</p>
         <div className="jennie-text">
           Jennie Kim, known as Jennie, was born in Anyang, South Korea on
           January 16th, 1996. Jennie studied abroad in New Zealand. She joined

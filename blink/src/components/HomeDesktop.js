@@ -7,7 +7,58 @@ import jennie from "../assets/jennie.jpg";
 import rose from "../assets/rose-2.jpg";
 import lisa from "../assets/lisa.png";
 import { Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+
+const useStyles = makeStyles({
+  cardRoot: {
+    width: "300px",
+    marginRight: "50px",
+    marginLeft: "50px",
+    background: "transparent",
+    textAlign :"center",
+
+  },
+  media: {
+    height: "250px",
+    objectFit: "cover",
+    borderRadius: "10px",
+    filter: "grayscale(100%)",
+    webkitFilter: "grayscale(100%)",
+    '&:hover': {
+      filter: "none",
+      webkitFilter: "grayscale(0)",
+      border: "3px solid #FB78B0"
+    }
+  },
+  textHead: {
+    fontWeight: 750,
+    fontSize: "24px",
+    lineHeight: 1.5,
+    color: "#FB78B0",
+    marginBottom: 0,
+   backgroundColor: "-webkit-linear-gradient(#FB78B0, #fff)", 
+   webkitBackgroundClip: "text", 
+   webkitTextFillColor: "transparent"
+  },
+  textSubhead: {
+    fontWeight: 550,
+    fontSize: "16px",
+    lineHeight: 1.5,
+    color: "#fff",
+  },
+  content: {
+cursor: "default"
+  }
+});
 function HomeDesktop() {
+  const classes = useStyles();
   return (
     <div className="home-root">
       <div className="bp-img-div">
@@ -59,22 +110,29 @@ function HomeDesktop() {
             Lisa
           </a>
         </div>
-        .<br/>
+        .<br />
         The name “BLACKPINK” represents fiercely beautiful women who overflow
         with talent and set their eyes on dominating the industry. BLACKPINK
         fandom is dearly known as <div className="bold-text">BLINK</div>.
-        <br/><br/>
-        <div className="bold-text" style={{fontSize: "23px"}}>Tours</div><br/>
-      <ul>
-        <li>Blackpink Arena Tour (2018)</li>
-        <li>In Your Area World Tour (2018–2020)</li>
-      </ul>
-      <br/>
-        <div className="bold-text" style={{fontSize: "23px"}}>Concerts</div><br/>
-      <ul>
-        <li>Blackpink Japan Premium Debut Showcase (2017)</li>
-        <li>Livestream Concert: The Show (2021)</li>
-      </ul>
+        <br />
+        <br />
+        <div className="bold-text" style={{ fontSize: "23px" }}>
+          Tours
+        </div>
+        <br />
+        <ul>
+          <li>Blackpink Arena Tour (2018)</li>
+          <li>In Your Area World Tour (2018–2020)</li>
+        </ul>
+        <br />
+        <div className="bold-text" style={{ fontSize: "23px" }}>
+          Concerts
+        </div>
+        <br />
+        <ul>
+          <li>Blackpink Japan Premium Debut Showcase (2017)</li>
+          <li>Livestream Concert: The Show (2021)</li>
+        </ul>
       </div>
       <div className="button-links">
         {/* <button className="song-btn" style={{ marginRight: "120px" }}>
@@ -106,7 +164,10 @@ function HomeDesktop() {
             <polyline points="8 1 12 5 8 9"></polyline>
           </svg>
         </a>
-        <br/><br/><br/><br/>
+        <br />
+        <br />
+        <br />
+        <br />
         <a
           href="/albums"
           className="cta"
@@ -133,10 +194,133 @@ function HomeDesktop() {
       <br />
       <br />
       <div className="bp-pages">
-        <Grid container spacing={5}>
+        <Grid  container
+  spacing={0}
+  direction="column"
+  alignItems="center"
+ 
+>
           <Row className="row">
             <Col>
-              <a href="/jisoo">
+              <Card className={classes.cardRoot}>
+                <CardActionArea>
+                <a href="/jisoo"> <CardMedia
+                    className={classes.media}
+                    image={jisoo}
+                    title="Jisoo"
+                  /></a>
+                  <CardContent className={classes.content}>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                      className={classes.textHead}
+                    >
+                      Jisoo
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                      className={classes.textSubhead}
+                    >
+                      03 Jan, 1995
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+              </Col>
+              <Col>
+              <Card className={classes.cardRoot}>
+                <CardActionArea>
+                <a href="/jennie"><CardMedia
+                    className={classes.media}
+                    image={jennie}
+                    title="Jennie"
+                  /></a>
+                  <CardContent className={classes.content}>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                      className={classes.textHead}
+                    >
+                      Jennie
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                      className={classes.textSubhead}
+                    >
+                      16 Jan, 1996
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+              </Col>
+              </Row>
+              <Row><Col>
+              <Card className={classes.cardRoot}>
+                <CardActionArea>
+                <a href="/rose"> <CardMedia
+                    className={classes.media}
+                    image={rose}
+                    title="Rosé"
+                  /></a>
+                  <CardContent className={classes.content}>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                      className={classes.textHead}
+                    >
+                      Rosé
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                      className={classes.textSubhead}
+                    >
+                      11 Feb, 1997
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+              </Col>
+              <Col>
+              <Card className={classes.cardRoot}>
+                <CardActionArea>
+                <a href="/lisa"><CardMedia
+                    className={classes.media}
+                    image={lisa}
+                    title="Lisa"
+                  /></a>
+                  <CardContent className={classes.content}>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                      className={classes.textHead}
+                    >
+                      Lisa
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                      className={classes.textSubhead}
+                    >
+                      27 Mar, 1997
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+              </Col></Row>
+
+        </Grid>
+              {/* <a href="/jisoo">
                 <Image className="bp-images" src={jisoo} />
               </a>
               <p className="text-head">Kim Jisoo</p>
@@ -163,10 +347,8 @@ function HomeDesktop() {
                 <Image className="bp-images" src={lisa} />
               </a>
               <p className="text-head">Lisa</p>
-              <p className="text-subhead">27 Jan, 1997</p>
-            </Col>
-          </Row>
-        </Grid>
+              <p className="text-subhead">27 Jan, 1997</p> */}
+
       </div>
       <br />
     </div>

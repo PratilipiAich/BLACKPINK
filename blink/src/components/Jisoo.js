@@ -1,19 +1,15 @@
 import React from "react";
-import jisoo from "../assets/jisoo.jpg";
-import img12 from "../assets/jisoo/12.png";
-import img13 from "../assets/jisoo/13.png";
-import img8 from "../assets/jisoo/8.jpg";
-import img1 from "../assets/jisoo/1.jpg";
-import img5 from "../assets/jisoo/5.jpg";
+import jisoo1 from "../assets/jisoo/jisoo1.gif";
 import img20 from "../assets/jisoo/20.png";
-import img21 from "../assets/jisoo/21.png";
-import sign from "../assets/jisoo/sign.png";
+
 import { Col, Image, Row } from "react-bootstrap";
 import "../styles/Jisoo.css";
 
 function Jisoo() {
   return (
     <div className="jisoo-root">
+  
+
       <div className="jisoo-banner">
         <Image className="jisoo-banner-img" src={img20} />
       </div>
@@ -98,10 +94,15 @@ function Jisoo() {
             </Row>
           </li>
         </ul>
-      </div>
+      </div>    <div style={{paddingTop: "5%", clear: "left"}}>
       <div className="jisoo-quote">
         “I never dream to be anything not possible.”
       </div>
+      <div style={{textAlign:"center"}}>
+          <a href="https://www.youtube.com/watch?v=502TVfCXK7g&list=PLGSLoP6wB13za_u3D-d4s7Rhs856odqcH&index=10" target="_blank" >
+            <Image  className="jennie-solo" src={jisoo1}/></a>
+       
+        <p className="jennie-tag" >KARTRIDER RUSH with JISOO</p> </div>
       <div className="jisoo-text">
         Jisoo was born on January 3, 1995 in Gunpo. She's a member of Blackpink.
         She became a YG Entertainment trainee in August 2011 and trained for 5
@@ -138,6 +139,7 @@ function Jisoo() {
         {/* <Image className="jisoo-img" src={img5} />
         <Image className="jisoo-img" src={img8} />
         <Image className="jisoo-img" src={img1} /> */}
+      </div>
       </div>
     </div>
   );

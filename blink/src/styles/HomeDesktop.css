@@ -23,14 +23,14 @@ li::marker {
     float: right;
 }
 .bp-img {
-    width:32.5vw;
+    height: 50vw;
     display: block;
     border-radius: 10px;
 }
 
 .bp-text {
 color: #fff;
-    font-size: 18px;
+    font-size: 1.3vw;
     letter-spacing: 0.1em;
     line-height: 1.6;
     width: 55%;
@@ -79,7 +79,7 @@ color: #fff;
   }
   .cta span {
     position: relative;
-    font-size: 16px;
+    font-size: 1.3vw;
     line-height: 18px;
     font-weight: 900;
     letter-spacing: 0.25em;
@@ -113,11 +113,12 @@ color: #fff;
     transform: scale(0.96);
   }
 .bp-pages {
-  margin-top: 50px;
+  margin-top: 10%;
   text-align: center;
 }
 .row {
-  margin: 20px 0px 0px 0;
+  /* margin: 20px 0px 0px 0; */
+
 }
   .bp-images {
     /* height: auto;
@@ -139,15 +140,13 @@ color: #fff;
     border: 3px solid #FB78B0;
 }
   .text-head {
-    margin: 30% 0px 0 20px;
-     font-weight: 700;
+    margin-bottom: 0;
+     font-weight: 800;
      font-size: 24px;
      line-height: 1.5;
      background: -webkit-linear-gradient(#FB78B0, #fff);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-     float: right;
-     text-align: left;
   }
   .text-subhead {
     font-weight: 600;
