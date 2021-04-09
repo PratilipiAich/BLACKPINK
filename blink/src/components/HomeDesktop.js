@@ -121,8 +121,8 @@ function HomeDesktop() {
         </div>
         <br />
         <ul>
-          <li>Blackpink Arena Tour (2018)</li>
-          <li>In Your Area World Tour (2018–2020)</li>
+          <li className="heart-list">Blackpink Arena Tour (2018)</li>
+          <li className="heart-list">In Your Area World Tour (2018–2020)</li>
         </ul>
         <br />
         <div className="bold-text" style={{ fontSize: "23px" }}>
@@ -130,8 +130,8 @@ function HomeDesktop() {
         </div>
         <br />
         <ul>
-          <li>Blackpink Japan Premium Debut Showcase (2017)</li>
-          <li>Livestream Concert: The Show (2021)</li>
+          <li className="heart-list">Blackpink Japan Premium Debut Showcase (2017)</li>
+          <li className="heart-list">Livestream Concert: The Show (2021)</li>
         </ul>
       </div>
       <div className="button-links">
@@ -260,6 +260,7 @@ function HomeDesktop() {
               </Card>
               </Col>
               </Row>
+              <br/>
               <Row><Col>
               <Card className={classes.cardRoot}>
                 <CardActionArea>

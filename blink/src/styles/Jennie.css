@@ -4,7 +4,7 @@
     }
     
     .jennie-banner-img {
-        width: 22vw;
+        width: 25vw;
         height: auto;
         object-fit: cover;
         border-radius: 10px;
@@ -51,10 +51,13 @@
           height: auto;
           width: 50vw;
           border-radius: 10px;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%)
       }
       .jennie-solo:hover{
-          opacity: 0.9;
-          box-shadow: -1px 1px 40px 1px #fff;
+            filter: none;
+            -webkit-filter: grayscale(0);
+            border: 3px solid #FB78B0
       }
       .jennie-tag {
         color: #FB78B0;
@@ -75,7 +78,8 @@
             clear: left;
         }
         .jennie-solo {
-
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
             width: 80vw;
         }
     }

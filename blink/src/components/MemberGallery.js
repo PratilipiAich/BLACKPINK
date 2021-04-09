@@ -6,7 +6,6 @@ import JennieImages from "../data/JennieImages";
 import RoseImages from "../data/RoseImages";
 import LisaImages from "../data/LisaImages";
 import "../styles/MemberGallery.css";
-import ReactGallery from "./ReactGallery";
 import SlideShow from 'react-image-show';
 let Images = [];
 var BrowserURL = window.location.pathname;
