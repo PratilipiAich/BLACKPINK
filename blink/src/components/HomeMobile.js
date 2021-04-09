@@ -73,8 +73,9 @@ function HomeMobile() {
         </div>
         <br />
         <ul>
-          <li className="link-text">Blackpink Arena Tour (2018)</li>
-          <li className="link-text">In Your Area World Tour (2018–2020)</li>
+          <li className="heart-list" style={{  fontSize: "5vw", padding: "0 20px 0 5px"}}>
+            Blackpink Arena Tour (2018)</li>
+          <li className="heart-list" style={{  fontSize: "5vw", padding: "0 20px 0 5px"}}>In Your Area World Tour (2018–2020)</li>
         </ul>
         <br />
         <div className="mob-bold-text" style={{ fontSize: "5.5vw" }}>
@@ -82,8 +83,8 @@ function HomeMobile() {
         </div>
         <br />
         <ul>
-          <li className="link-text">Blackpink Japan Premium Debut Showcase (2017)</li>
-          <li className="link-text">Livestream Concert: The Show (2021)</li>
+          <li className="heart-list" style={{  fontSize: "5vw", padding: "0 20px 0 5px"}}>Blackpink Japan Premium Debut Showcase (2017)</li>
+          <li className="heart-list" style={{  fontSize: "5vw", padding: "0 20px 0 5px"}}>Livestream Concert: The Show (2021)</li>
         </ul>
       </div>
       <div className="mob-button-links">
